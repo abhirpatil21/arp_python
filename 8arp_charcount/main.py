@@ -29,4 +29,4 @@ swara_count = s + w + a + r + a
 
 print(f"shreya count : {shreya_count} \n swara count : {swara_count}")
 
-
+print(f"Tpye of Swara_count :  {type(swara_count)}")
