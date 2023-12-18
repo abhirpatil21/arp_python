@@ -11,5 +11,14 @@ height_in_meter = (feet * 0.3048) + ((1.0/12) * 0.3048 * inch)
 
 #bmi calculation
 bmi = round((kg / height_in_meter ** 2), 2)
-bmi = "{:.2f}".format(bmi)
+#bmi = "{:.2f}".format(bmi)
 print(f"Your BMI is : {bmi}")
+
+if bmi < 18.5:
+    print(f"You are underweight with BMI : {bmi}")
+elif bmi < 25:
+    print(f"You are normal weight with BMI : {bmi}")
+elif bmi < 30:
+    print(f"You are slightly over weight with BMI : {bmi}")
+else:
+    print(f"You are obese with BMI : {bmi}")
