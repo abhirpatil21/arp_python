@@ -10,6 +10,6 @@ inch = float(input("Input inch : "))
 height_in_meter = (feet * 0.3048) + ((1.0/12) * 0.3048 * inch)
 
 #bmi calculation
-bmi = kg / height_in_meter ** 2
-
+bmi = round((kg / height_in_meter ** 2), 2)
+bmi = "{:.2f}".format(bmi)
 print(f"Your BMI is : {bmi}")
